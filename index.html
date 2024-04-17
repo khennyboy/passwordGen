@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/password_generator.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/jquery.min.js"></script>
+ 
+  </head>
+  <body>
+    <div class="next">
+    <div id="wrapper">
+      <div class="screen">
+        <input type="text" readonly class="generated_password"  />
+        <i class="fa-regular fa-copy icon"></i>
+      </div>
+      <div class="input">
+        <div class="first_C">
+          <label for="length" class="length"> Length of password </label>
+          <input type="number" id="length" />
+        </div>
+        <div class="second_C">  
+          <label for="capital_N" class="container">
+            Capital letters
+            <input type="checkbox" id="capital_N" class="capital_letter" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="third_C">
+          <label for="smaller_N" class="container">
+            Small letters
+            <input type="checkbox" id="smaller_N" class="small_letter" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="forth_C">
+          <label for="digit" class="container">
+            Numbers
+            <input type="checkbox" id="digit" class="digits" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="fifth_C">
+          <label for="symbols" class="container">
+            Symbols
+            <input type="checkbox" id="symbols" class="symbols" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="generate">Generate Password</div>
+      <p class="note">
+        Kindly click the checkbox above for me to know what to generate
+      </p>
+
+    </div>
+    
+      <div class="copied_text">
+      <div class="parent">
+        <div class="popup"><span class="copied"></span></div>
+        Text copied successfully...
+      </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="./js/password.js"></script>
+</html>
